@@ -13,12 +13,9 @@ func main() {
 	var maiorLucro, totalCompra, totalVenda float64
 
 	for {
+	    fmt.Printf("Digite o código, preço de compra, preço de venda e numero de vendas: ")
 		fmt.Scan(&codigo, &precoCompra, &precoVenda, &numVendas)
-		if err != nil {
-			break // Se ocorrer erro na leitura, sai do loop
-		}
-
-		// Cálculo do lucro
+		
 		lucro := (precoVenda - precoCompra) * float64(numVendas)
 		lucroPercentual := (lucro / (precoCompra * float64(numVendas))) * 100
 

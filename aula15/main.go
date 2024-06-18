@@ -8,7 +8,7 @@ func main() {
   fmt.Scan(&x)
   fmt.Scan(&n)
 
-    result = potencia(x, y)
+    result = potencia(x, n)
     fmt.Printf("%d\n", result)
   
 }
